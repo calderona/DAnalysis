@@ -4,7 +4,7 @@
 //------------------------------------------------------------------------------
 const Bool_t basictest  = true;
 
-const TString inputdir  = "../rootfiles/";
+const TString inputdir  = "rootfiles/";
 const TString outputdir = "figures/";
 
 enum {linY, logY};
@@ -71,8 +71,7 @@ void runPlotter(TString level = "",
   //----------------------------------------------------------------------------
   if (!option.Contains("nostack")) plotter.SetDrawYield(true);
 
-  plotter.Draw("histoname1", "histoname1", -1, 0, "GeV", true);
-  plotter.Draw("histoname2", "histoname2", -1, 0, "GeV", true);
+  plotter.Draw("histoname1", "histoname1", -1, 0, "GeV", true, 0, 100, 0.001, 1e11);
 
   // Copy index.php in every directory
   //----------------------------------------------------------------------------

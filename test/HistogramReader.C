@@ -700,7 +700,7 @@ void HistogramReader::Draw(TString hname,
 	{
 	  TAxis* xaxis = (TAxis*)ratio->GetXaxis();
       
-	  xaxis->ChangeLabel( -1, -1, -1, -1, -1, -1, "1.0");
+	  /*xaxis->ChangeLabel( -1, -1, -1, -1, -1, -1, "1.0");
 	  xaxis->ChangeLabel( -2, -1, -1, -1, -1, -1, "0.99");
 	  xaxis->ChangeLabel( -3, -1, -1, -1, -1, -1, "0.98");
 	  xaxis->ChangeLabel( -4, -1, -1, -1, -1, -1, "0.97");
@@ -710,7 +710,7 @@ void HistogramReader::Draw(TString hname,
 	  xaxis->ChangeLabel( -8, -1, -1, -1, -1, -1, "0.7");
 	  xaxis->ChangeLabel( -9, -1, -1, -1, -1, -1, "0.5");
 	  xaxis->ChangeLabel(-10, -1, -1, -1, -1, -1, "0.3");
-	  xaxis->ChangeLabel(-11, -1, -1, -1, -1, -1, "0.0");
+	  xaxis->ChangeLabel(-11, -1, -1, -1, -1, -1, "0.0");*/
 	}
 
 
