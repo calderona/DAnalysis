@@ -1,0 +1,23 @@
+[config-begin]
+
+    Outputdir  = output
+    Outputfile = outputfile.root
+    Lumi       = 1
+
+    Testmode   = true
+
+    Maxchilds  = 6
+
+    Samplesdir = root://eoscms.cern.ch//store/group/upgrade/delphes_output/LHEGEN_SMbackgrounds/Delphes342pre07_hadd/
+
+[config-end]
+
+
+[inputfiles-begin]
+
+ TT_TuneCUETP8M2T4_14TeV-powheg-pythia8_200PU/, TT, 59, 984.5, auto, 1
+ DYJetsToLL_M-10to50_TuneCUETP8M1_14TeV-madgraphMLM-pythia8_200PU/, DY, 418, 18610, auto, 2
+ ST_s-channel_4f_leptonic_14TeV-amcatnlo-pythia8_200PU/, ST, 632, 3.36, auto, 3 #13TeV
+ WTolNu01234Jets_5f_LO_MLM_madgraph_V5_2p4p2_200PU/, WJets, 100, 61526, auto, 4 #13TeV NNLO
+
+[inputfiles-end]
