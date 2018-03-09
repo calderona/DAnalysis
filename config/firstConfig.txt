@@ -2,7 +2,7 @@
 
     Outputdir  = output
     Outputfile = outputfile.root
-    Lumi       = 1
+    Lumi       = 1000
 
     Testmode   = true
 
