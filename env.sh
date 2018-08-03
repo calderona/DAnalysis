@@ -3,7 +3,7 @@
 OLDDIR=`pwd`
 
 #DAnalysis
-DANALYSISPATH=/afs/cern.ch/user/j/jkiesele/public/DAnalysis_framework/v.1.1_rc2/DAnalysis
+DANALYSISPATH=/afs/cern.ch/user/j/jkiesele/public/DAnalysis_framework/YR_Delphes/DAnalysis
 
 #CMSSW and Delphes
 cd $DANALYSISPATH/../
