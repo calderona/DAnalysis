@@ -35,7 +35,7 @@ void runAnalyser::analyze(size_t childid /* this info can be used for printouts 
 	 * is used to run directly in Delphes output.
 	 * For skimmed ntuples, see below
 	 */
-	d_ana::dBranchHandler<Electron> elecs(tree(),"Electron");
+	d_ana::dBranchHandler<Electron> elecs(tree(),"ElectronCHS");
 	/*
 	 * Other branches might be the following
 	 * (for a full list, please inspect the Delphes sample root file with root)
@@ -48,7 +48,7 @@ void runAnalyser::analyze(size_t childid /* this info can be used for printouts 
 	d_ana::dBranchHandler<Jet>         jet(tree(),"Jet");
 	d_ana::dBranchHandler<Muon>        muontight(tree(),"MuonTight");
 	d_ana::dBranchHandler<Muon>        muonloose(tree(),"MuonLoose");
-	d_ana::dBranchHandler<Photon>      photon(tree(),"Photon");
+	d_ana::dBranchHandler<Photon>      photon(tree(),"PhotonLoose");
 	d_ana::dBranchHandler<MissingET>   met(tree(),"MissingET");
 
 
@@ -91,8 +91,8 @@ void runAnalyser::analyze(size_t childid /* this info can be used for printouts 
 	/*
 	 * Or store a vector of objects (also possible to store only one object)
 	 */
-	std::vector<Electron> skimmedelecs;
-	myskim->Branch("Electrons",&skimmedelecs);
+	//std::vector<Electron> skimmedelecs;
+	//myskim->Branch("Electrons",&skimmedelecs);
 
 
 
@@ -119,16 +119,17 @@ void runAnalyser::analyze(size_t childid /* this info can be used for printouts 
 		/*
 		 * Or to fill the skim
 		 */
-		skimmedelecs.clear();
+
+		/*		skimmedelecs.clear();
 		for(size_t i=0;i<elecs.size();i++){
 			//flat info
 			elecPt=elecs.at(i)->PT;
 			if(elecs.at(i)->PT < 20) continue;
 			//or objects
-			skimmedelecs.push_back(*elecs.at(i));
-		}
+			skimmedelecs.push_back(*elecs.at(i));*/
+		//}
 
-		myskim->Fill();
+	//	myskim->Fill();
 
 
 		/*==SKIM==
