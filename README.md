@@ -6,23 +6,16 @@ https://twiki.cern.ch/twiki/bin/view/CMS/DAnalysisFramework
 
 # Configuration (To be done every time)
   
-These two commands should be executed every time you launch a new lxplus session.
+Clone the "YRupdate" branch. 
+ 
+These two commands should be executed every time you launch a new lxplus session. You will need a bash: 
 
     source env.sh
     make -j  
 
 # Create/run an analyser
 
-The first step to produce some plots is to create a config file (the template config/testConfig.txt is there to help you), by selecting the processes you want to consider along with their cross sections in fb-1 (or in pb-1 if the lumi is set to 1000). The number of events can be set to "auto" and the testMode can be used to reduce artificially the number of events considered.
-
-Once this is done, you will either need to create a new or use a previously created analyser. To create a new one, you can just run the following command:
-
-    createAnalyser.sh <analyserName>
-
-A simple command then allows you to run the analyser, after compiling it.      
-
-    make -j
-    ./<analyserName> <configFile>
+./runAnalyser config/testSUSYsamples.txt
 
 # Create some plots
 
