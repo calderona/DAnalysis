@@ -1,7 +1,7 @@
 OLDDIR=`pwd`
 
 #DAnalysis
-DANALYSISPATH=/afs/cern.ch/work/c/calderon/private/YR_Delphes/DAnalysis
+DANALYSISPATH=/afs/cern.ch/work/c/calderon/public/YR_Delphes/DAnalysis
 #DELPHES_PATH=/afs/cern.ch/work/c/calderon/private/delphes
 #CMSSW_PATH=/afs/cern.ch/work/c/calderon/private/CMSSW_9_1_0_pre3
 
@@ -21,5 +21,5 @@ export LD_LIBRARY_PATH=$PYTHIA8/lib:$LD_LIBRARY_PATH
 export DANALYSISPATH=$DANALYSISPATH
 export LD_LIBRARY_PATH=$DANALYSISPATH:$LD_LIBRARY_PATH
 export PATH=$PATH:$DANALYSISPATH
-export LD_LIBRARY_PATH=/afs/cern.ch/work/c/calderon/private/DAnalysis:$LD_LIBRARY_PATH
-export PATH=/afs/cern.ch/private/work/c/calderon/DAnalysis:$PATH
+export LD_LIBRARY_PATH=/afs/cern.ch/work/c/calderon/public/YR_Delphes/DAnalysis:$LD_LIBRARY_PATH
+export PATH=/afs/cern.ch/work/c/calderon/public/YR_Delphes/DAnalysis:$PATH
